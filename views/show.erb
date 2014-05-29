@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+
+<h1> SLACKER NEWS </h1>
+
+
+<h2> The Articles: </h2>
+
+
+
+    <ul>
+
+      <% @results.each do |article| %>
+        <h4> <%="#{article["title"]}"%> </h4>
+        <li> <a target="_blank" href="http:\\<%= "#{article["url"]}"%>"> <%="#{article["url"]}"%>  </a></li>
+        <li> <%="#{article["description"]}"%> </li>
+      <% end %>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+
+</html>
